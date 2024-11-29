@@ -19,7 +19,7 @@ def save_result_to_xml(result_vector, file_path):
     """
     root = ET.Element("Results")
     
-    # Добавляем каждый элемент результата в XML.
+    # Добавляем каждый элемент результата в XML
     for idx, value in enumerate(result_vector):
         elem = ET.SubElement(root, "Element")
         elem.set("Index", str(idx))
